@@ -116,6 +116,7 @@ body {
     border: none;
     margin-bottom: 32px;
     position: relative;
+    animation: projectsFlow 22s linear infinite; /* Slower speed */
     width: 100%;
     box-sizing: border-box;
     animation: projectsFlow 22s linear infinite;
@@ -131,10 +132,10 @@ body {
 
 @keyframes projectsFlow {
     0% {
-        transform: translateX(0); /* Start with first card fully visible */
+        transform: translateX(100vw); /* Start off-screen right */
     }
     100% {
-        transform: translateX(-50%); /* Move left, but not too far */
+        transform: translateX(-60%);  /* Move left across container */
     }
 }
 
@@ -341,20 +342,15 @@ body {
     border: none;
     margin-bottom: 32px;
     position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    animation: projectsFlow 22s linear infinite;
-    /* Add left and right padding equal to container padding */
-    padding-left: 56px;
-    padding-right: 56px;
+    animation: projectsFlow 22s linear infinite; /* Slower speed */
 }
 
 @keyframes projectsFlow {
     0% {
-        transform: translateX(0); /* Start with first card fully visible */
+        transform: translateX(100vw); /* Start off-screen right */
     }
     100% {
-        transform: translateX(-50%); /* Move left, but not too far */
+        transform: translateX(-60%);  /* Move left across container */
     }
 }
 
